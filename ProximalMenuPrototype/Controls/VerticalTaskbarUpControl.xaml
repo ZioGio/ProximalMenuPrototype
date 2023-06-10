@@ -1,0 +1,338 @@
+﻿<UserControl
+    x:Class="ProximalMenuPrototype.Controls.VerticalTaskbarUpControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ProximalMenuPrototype.Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="300"
+    d:DesignWidth="50">
+
+    <UserControl.Resources>
+        <Storyboard x:Name="Storyboard_VerticalUpTaskbar_Open">
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="LayoutRoot">
+                <DiscreteObjectKeyFrame KeyTime="0:0:0">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.VerticalAlignment)" Storyboard.TargetName="LayoutRoot">
+                <DiscreteObjectKeyFrame KeyTime="0:0:0">
+                    <DiscreteObjectKeyFrame.Value>
+                        <VerticalAlignment>Bottom</VerticalAlignment>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <DoubleAnimation
+                Duration="0:0:0.3"
+                From="0"
+                To="-250"
+                Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)"
+                Storyboard.TargetName="btn_1">
+                <DoubleAnimation.EasingFunction>
+                    <PowerEase EasingMode="EaseOut" />
+                </DoubleAnimation.EasingFunction>
+            </DoubleAnimation>
+            <DoubleAnimation
+                Duration="0:0:0.3"
+                From="0"
+                To="-200"
+                Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)"
+                Storyboard.TargetName="btn_2">
+                <DoubleAnimation.EasingFunction>
+                    <PowerEase EasingMode="EaseOut" />
+                </DoubleAnimation.EasingFunction>
+            </DoubleAnimation>
+            <DoubleAnimation
+                Duration="0:0:0.3"
+                From="0"
+                To="-150"
+                Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)"
+                Storyboard.TargetName="btn_3">
+                <DoubleAnimation.EasingFunction>
+                    <PowerEase EasingMode="EaseOut" />
+                </DoubleAnimation.EasingFunction>
+            </DoubleAnimation>
+            <DoubleAnimation
+                Duration="0:0:0.3"
+                From="0"
+                To="-100"
+                Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)"
+                Storyboard.TargetName="btn_4">
+                <DoubleAnimation.EasingFunction>
+                    <PowerEase EasingMode="EaseOut" />
+                </DoubleAnimation.EasingFunction>
+            </DoubleAnimation>
+            <DoubleAnimation
+                Duration="0:0:0.3"
+                From="0"
+                To="-50"
+                Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)"
+                Storyboard.TargetName="btn_5">
+                <DoubleAnimation.EasingFunction>
+                    <PowerEase EasingMode="EaseOut" />
+                </DoubleAnimation.EasingFunction>
+            </DoubleAnimation>
+            <DoubleAnimation
+                Duration="0:0:0.3"
+                From="0"
+                To="0"
+                Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)"
+                Storyboard.TargetName="btn_6">
+                <DoubleAnimation.EasingFunction>
+                    <PowerEase EasingMode="EaseOut" />
+                </DoubleAnimation.EasingFunction>
+            </DoubleAnimation>
+            <DoubleAnimation
+                Duration="0:0:0.3"
+                From="0"
+                To="1"
+                Storyboard.TargetProperty="(UIElement.Opacity)"
+                Storyboard.TargetName="btn_6" />
+            <DoubleAnimation
+                Duration="0:0:0.3"
+                From="0"
+                To="1"
+                Storyboard.TargetProperty="(UIElement.Opacity)"
+                Storyboard.TargetName="btn_5" />
+            <DoubleAnimation
+                Duration="0:0:0.3"
+                From="0"
+                To="1"
+                Storyboard.TargetProperty="(UIElement.Opacity)"
+                Storyboard.TargetName="btn_4" />
+            <DoubleAnimation
+                Duration="0:0:0.3"
+                From="0"
+                To="1"
+                Storyboard.TargetProperty="(UIElement.Opacity)"
+                Storyboard.TargetName="btn_3" />
+            <DoubleAnimation
+                Duration="0:0:0.3"
+                From="0"
+                To="1"
+                Storyboard.TargetProperty="(UIElement.Opacity)"
+                Storyboard.TargetName="btn_2" />
+            <DoubleAnimation
+                Duration="0:0:0.3"
+                From="0"
+                To="1"
+                Storyboard.TargetProperty="(UIElement.Opacity)"
+                Storyboard.TargetName="btn_1" />
+        </Storyboard>
+
+        <Storyboard x:Name="Storyboard_VerticalUpTaskbar_Close">
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.VerticalAlignment)" Storyboard.TargetName="LayoutRoot">
+                <DiscreteObjectKeyFrame KeyTime="0:0:0">
+                    <DiscreteObjectKeyFrame.Value>
+                        <VerticalAlignment>Bottom</VerticalAlignment>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <DoubleAnimation
+                Duration="0:0:0.3"
+                From="-250"
+                To="0"
+                Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)"
+                Storyboard.TargetName="btn_1">
+                <DoubleAnimation.EasingFunction>
+                    <PowerEase EasingMode="EaseOut" />
+                </DoubleAnimation.EasingFunction>
+            </DoubleAnimation>
+            <DoubleAnimation
+                Duration="0:0:0.3"
+                From="-200"
+                To="0"
+                Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)"
+                Storyboard.TargetName="btn_2">
+                <DoubleAnimation.EasingFunction>
+                    <PowerEase EasingMode="EaseOut" />
+                </DoubleAnimation.EasingFunction>
+            </DoubleAnimation>
+            <DoubleAnimation
+                Duration="0:0:0.3"
+                From="-150"
+                To="0"
+                Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)"
+                Storyboard.TargetName="btn_3">
+                <DoubleAnimation.EasingFunction>
+                    <PowerEase EasingMode="EaseOut" />
+                </DoubleAnimation.EasingFunction>
+            </DoubleAnimation>
+            <DoubleAnimation
+                Duration="0:0:0.3"
+                From="-100"
+                To="0"
+                Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)"
+                Storyboard.TargetName="btn_4">
+                <DoubleAnimation.EasingFunction>
+                    <PowerEase EasingMode="EaseOut" />
+                </DoubleAnimation.EasingFunction>
+            </DoubleAnimation>
+            <DoubleAnimation
+                Duration="0:0:0.3"
+                From="-50"
+                To="0"
+                Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)"
+                Storyboard.TargetName="btn_5">
+                <DoubleAnimation.EasingFunction>
+                    <PowerEase EasingMode="EaseOut" />
+                </DoubleAnimation.EasingFunction>
+            </DoubleAnimation>
+            <DoubleAnimation
+                Duration="0:0:0.3"
+                From="0"
+                To="0"
+                Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)"
+                Storyboard.TargetName="btn_6">
+                <DoubleAnimation.EasingFunction>
+                    <PowerEase EasingMode="EaseOut" />
+                </DoubleAnimation.EasingFunction>
+            </DoubleAnimation>
+            <DoubleAnimation
+                Duration="0:0:0.3"
+                From="1"
+                To="0"
+                Storyboard.TargetProperty="(UIElement.Opacity)"
+                Storyboard.TargetName="btn_6" />
+            <DoubleAnimation
+                Duration="0:0:0.3"
+                From="1"
+                To="0"
+                Storyboard.TargetProperty="(UIElement.Opacity)"
+                Storyboard.TargetName="btn_5" />
+            <DoubleAnimation
+                Duration="0:0:0.3"
+                From="1"
+                To="0"
+                Storyboard.TargetProperty="(UIElement.Opacity)"
+                Storyboard.TargetName="btn_4" />
+            <DoubleAnimation
+                Duration="0:0:0.3"
+                From="1"
+                To="0"
+                Storyboard.TargetProperty="(UIElement.Opacity)"
+                Storyboard.TargetName="btn_3" />
+            <DoubleAnimation
+                Duration="0:0:0.3"
+                From="1"
+                To="0"
+                Storyboard.TargetProperty="(UIElement.Opacity)"
+                Storyboard.TargetName="btn_2" />
+            <DoubleAnimation
+                Duration="0:0:0.3"
+                From="1"
+                To="0"
+                Storyboard.TargetProperty="(UIElement.Opacity)"
+                Storyboard.TargetName="btn_1" />
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="LayoutRoot">
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.3">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Collapsed</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+        </Storyboard>
+    </UserControl.Resources>
+
+    <Grid x:Name="LayoutRoot">
+
+        <!-- Green -->
+        <Button
+            x:Name="btn_6"
+            Style="{StaticResource ButtonStyle}"
+            RenderTransformOrigin="0.5,0.5"
+            Tapped="Btn_6_Tapped"
+            Opacity="0">
+            <Button.RenderTransform>
+                <CompositeTransform />
+            </Button.RenderTransform>
+            <Grid>
+                <FontIcon Style="{StaticResource GreenFontIconFilledStyle}" />
+                <FontIcon Style="{StaticResource GreenFontIconOutlineStyle}" />
+            </Grid>
+        </Button>
+
+        <!-- Yellow -->
+        <Button
+            x:Name="btn_5"
+            Style="{StaticResource ButtonStyle}"
+            RenderTransformOrigin="0.5,0.5"
+            Tapped="Btn_5_Tapped"
+            Opacity="0">
+            <Button.RenderTransform>
+                <CompositeTransform />
+            </Button.RenderTransform>
+            <Grid>
+                <FontIcon Style="{StaticResource YellowFontIconFilledStyle}" />
+                <FontIcon Style="{StaticResource YellowFontIconOutlineStyle}" />
+            </Grid>
+        </Button>
+
+        <!-- Blue -->
+        <Button
+            x:Name="btn_4"
+            Style="{StaticResource ButtonStyle}"
+            RenderTransformOrigin="0.5,0.5"
+            Tapped="Btn_4_Tapped"
+            Opacity="0">
+            <Button.RenderTransform>
+                <CompositeTransform />
+            </Button.RenderTransform>
+            <Grid>
+                <FontIcon Style="{StaticResource BlueFontIconFilledStyle}" />
+                <FontIcon Style="{StaticResource BlueFontIconOutlineStyle}" />
+            </Grid>
+        </Button>
+
+        <!-- Orange -->
+        <Button
+            x:Name="btn_3"
+            Style="{StaticResource ButtonStyle}"
+            RenderTransformOrigin="0.5,0.5"
+            Tapped="Btn_3_Tapped"
+            Opacity="0">
+            <Button.RenderTransform>
+                <CompositeTransform />
+            </Button.RenderTransform>
+            <Grid>
+                <FontIcon Style="{StaticResource OrangeFontIconFilledStyle}" />
+                <FontIcon Style="{StaticResource OrangeFontIconOutlineStyle}" />
+            </Grid>
+        </Button>
+
+        <!-- Purple -->
+        <Button
+            x:Name="btn_2"
+            Style="{StaticResource ButtonStyle}"
+            RenderTransformOrigin="0.5,0.5"
+            Tapped="Btn_2_Tapped"
+            Opacity="0">
+            <Button.RenderTransform>
+                <CompositeTransform />
+            </Button.RenderTransform>
+            <Grid>
+                <FontIcon Style="{StaticResource PurpleFontIconFilledStyle}" />
+                <FontIcon Style="{StaticResource PurpleFontIconOutlineStyle}" />
+            </Grid>
+        </Button>
+
+        <!-- Red -->
+        <Button
+            x:Name="btn_1"
+            Style="{StaticResource ButtonStyle}"
+            RenderTransformOrigin="0.5,0.5"
+            Tapped="Btn_1_Tapped"
+            Opacity="0">
+            <Button.RenderTransform>
+                <CompositeTransform />
+            </Button.RenderTransform>
+            <Grid>
+                <FontIcon Style="{StaticResource RedFontIconFilledStyle}" />
+                <FontIcon Style="{StaticResource RedFontIconOutlineStyle}" />
+            </Grid>
+        </Button>
+    </Grid>
+</UserControl>
