@@ -3,7 +3,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
 
     <!-- Segoe Fluent Icons is included in Windows 11, but not in Windows 10 -->
-    <FontFamily x:Key="SegoeFluentIcons">ms-appx:///Assets/Fonts/SegoeFluentIcons.ttf#Segoe Fluent Icons</FontFamily>
+    <FontFamily x:Key="SegoeFluentIcons">ms-appx:///Fonts/SegoeFluentIcons.ttf#Segoe Fluent Icons</FontFamily>
     
     <SolidColorBrush x:Key="CanvasBackgroundBrush" Color="Black" Opacity="0.01" />
     <SolidColorBrush x:Key="ButtonBackgroundBrush" Color="{StaticResource SystemAccentColor}" Opacity="0.4" />
